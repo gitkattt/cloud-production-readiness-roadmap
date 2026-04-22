@@ -5,6 +5,8 @@
 
 Designed and deployed a highly available web application architecture using an Auto Scaling Group and Application Load Balancer across multiple Availability Zones. Simulated instance failure and validated self-healing behavior.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/a2149e49ff9026c37eeceac548c0b85e771e9113/Week%207%20%E2%80%93%20High%20Availability/Screenshots/1.png)
+
 ## Services Used
 
 * Amazon EC2
@@ -18,6 +20,8 @@ Designed and deployed a highly available web application architecture using an A
 ## Deployment Approach
 
 This week’s environment was built manually through the AWS Console rather than CloudFormation to strengthen hands-on operational knowledge of service configuration and dependencies. (4/22/26 EDIT: I re-did this lab to gather screenshots, I used CloudFromation to save time with the deployment)
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/a2149e49ff9026c37eeceac548c0b85e771e9113/Week%207%20%E2%80%93%20High%20Availability/Screenshots/2.png)
 
 ## Auto Scaling Group and Load Balancer Deployment
 
@@ -42,8 +46,11 @@ Used the Load Balancer DNS name to access the application and confirmed traffic 
 
 Observed traffic responses from:
 
-* **us-east-1e**
-* **us-east-1a**
+* **us-east-1c**
+* **us-east-1b**
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/a2149e49ff9026c37eeceac548c0b85e771e9113/Week%207%20%E2%80%93%20High%20Availability/Screenshots/3.png)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/a2149e49ff9026c37eeceac548c0b85e771e9113/Week%207%20%E2%80%93%20High%20Availability/Screenshots/4.png)
 
 ## Instance Failure Simulation
 
@@ -66,8 +73,8 @@ Performed failure testing by manually terminating one EC2 instance.
 
 Confirmed restored traffic flow across:
 
-* **us-east-1e**
-* **us-east-1a**
+* **us-east-1c**
+* **us-east-1b**
 
 ## Operational Notes
 

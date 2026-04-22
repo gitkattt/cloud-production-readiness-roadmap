@@ -5,6 +5,8 @@
 
 Implemented disaster recovery strategies for storage and databases using cross-region replication and high availability architecture. Simulated service disruption scenarios and validated failover procedures through a disaster recovery playbook.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d8391910574b8224e9b7baffb459d95c2883a0e3/Week%206%20%E2%80%93%20Disaster%20Recovery/Screenshots/4.png)
+
 ## Services Used
 
 * Amazon S3
@@ -14,6 +16,8 @@ Implemented disaster recovery strategies for storage and databases using cross-r
 * IAM Roles
 
 ## Cross-Region S3 Replication
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d8391910574b8224e9b7baffb459d95c2883a0e3/Week%206%20%E2%80%93%20Disaster%20Recovery/Screenshots/1.png)
 
 Created two Amazon S3 buckets in separate geographic regions:
 
@@ -36,6 +40,8 @@ Created two Amazon S3 buckets in separate geographic regions:
 
 ## Multi-AZ RDS Deployment
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d8391910574b8224e9b7baffb459d95c2883a0e3/Week%206%20%E2%80%93%20Disaster%20Recovery/Screenshots/2.png)
+
 Deployed Amazon RDS in a Multi-AZ configuration for database resilience.
 
 ### Architecture
@@ -44,6 +50,8 @@ Deployed Amazon RDS in a Multi-AZ configuration for database resilience.
 * Standby instance in **us-east-1a**
 
 ### Validation
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d8391910574b8224e9b7baffb459d95c2883a0e3/Week%206%20%E2%80%93%20Disaster%20Recovery/Screenshots/3.png)
 
 * Modified data on primary database
 * Confirmed synchronous replication to standby instance

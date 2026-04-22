@@ -4,6 +4,8 @@
 
 Designed a multi-account AWS environment using AWS Organizations to separate Development, Staging, and Production workloads while enforcing centralized governance through Service Control Policies (SCPs).
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/38ca213b58cdd43164fbf3892db43c9c9be44dd8/Week%201%20%E2%80%93%20AWS%20Organizations%20%26%20Governance/Screenshots/3.png)
+
 ## Services Used
 
 * AWS Organizations

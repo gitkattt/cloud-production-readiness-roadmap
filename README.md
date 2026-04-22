@@ -1,4 +1,3 @@
-# cloud-production-readiness-roadmap
 
 # 6-Month Cloud Production Readiness Roadmap
 

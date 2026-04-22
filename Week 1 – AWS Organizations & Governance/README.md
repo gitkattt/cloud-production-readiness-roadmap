@@ -1,15 +1,19 @@
+# Week 1 - AWS Organizations & Governance
 
-Week 1 – AWS Organizations & Governance
-Objective
+## Objective
 
 Designed a multi-account AWS environment using AWS Organizations to separate Development, Staging, and Production workloads while enforcing centralized governance through Service Control Policies (SCPs).
 
-Services Used
-AWS Organizations
-Organizational Units (OUs)
-Service Control Policies (SCPs)
-IAM / Account Governance
-Environment Structure
+## Services Used
+
+* AWS Organizations
+* Organizational Units (OUs)
+* Service Control Policies (SCPs)
+* IAM
+
+## Organizational Structure
+
+```text
 Root Account
 ├── Dev OU
 │   └── Dev Account
@@ -17,55 +21,47 @@ Root Account
 │   └── Staging Account
 └── Production OU
     └── Production Account
-Governance Design
+```
 
-Implemented account separation to improve:
+## Policies Implemented
 
-Security boundaries
-Operational isolation
-Least privilege governance
-Reduced blast radius between environments
-Account Purposes
-Root Management Account – Central governance and billing
-Dev Account – Experimental workloads and testing
-Staging Account – Pre-production validation
-Production Account – Live production workloads
-Service Control Policies Implemented
-Dev OU Policy
+### Dev OU
 
-Restricted Amazon EKS usage inside development environments to control cost and prevent unnecessary cluster creation.
+* Denied Amazon EKS creation
 
-Production OU Policy
+### Production OU
 
-Denied creation of public IP addresses to reduce accidental internet exposure of production resources.
+* Denied public IP address creation
 
-Organization-Wide Policy
+### Organization Wide
 
-Restricted access outside approved U.S. regions for governance and compliance control.
+* Denied access outside approved US regions
 
-Validation / Testing
+## Validation
 
-Confirmed SCP inheritance behavior across OUs and tested restrictions from member accounts to verify policy enforcement.
+* Confirmed SCP inheritance
+* Tested restrictions from member accounts
+* Verified governance boundaries
 
-Incident Encountered
-Issue
+## Incident Encountered
 
-A malformed organization-wide SCP unintentionally blocked multiple member accounts from accessing AWS resources.
+### Issue
 
-Root Cause
+Malformed SCP blocked member accounts from accessing AWS resources.
 
-Condition logic inside the region restriction SCP was misconfigured, resulting in broader deny behavior than intended.
+### Resolution
 
-Impact
-Member accounts lost expected access
-Administrative confusion during troubleshooting
-Temporary governance disruption
-Resolution
-Disabled affected SCP
-Reviewed policy syntax and condition logic
-Retested using narrower scope before reapplying
-Lessons Learned
-SCPs override IAM permissions and must be tested carefully
-Apply deny policies incrementally
-Validate conditions in isolated OUs before organization-wide rollout
-Governance changes require rollback planning
+* Disabled SCP
+* Reviewed policy conditions
+* Retested before reapplying
+
+## Lessons Learned
+
+* SCPs override IAM permissions
+* Test deny policies incrementally
+* Use staged rollouts for governance changes
+
+## Resume Bullet
+
+Implemented a multi-account AWS Organizations environment with governance guardrails using SCPs across Dev, Staging, and Production accounts.
+

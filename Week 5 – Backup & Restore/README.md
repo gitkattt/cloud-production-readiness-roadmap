@@ -5,6 +5,8 @@
 
 Implemented backup and recovery strategies for Amazon RDS and Amazon EC2 using native AWS snapshot capabilities and AWS Backup. Tested restore procedures and documented Recovery Time Objective (RTO) and Recovery Point Objective (RPO).
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/01a498e806aaf7994ebc5b4738796de4b047b4c6/Week%205%20%E2%80%93%20Backup%20%26%20Restore/Screenshots/1.png)
+
 ## Services Used
 
 * Amazon RDS
@@ -40,6 +42,8 @@ Created a centralized AWS Backup policy with:
 
 ## EC2 Snapshot Restore
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/01a498e806aaf7994ebc5b4738796de4b047b4c6/Week%205%20%E2%80%93%20Backup%20%26%20Restore/Screenshots/2.png)
+
 Created an EC2 instance containing important demo data and system changes.
 
 Performed the following recovery workflow:
@@ -50,6 +54,8 @@ Performed the following recovery workflow:
 * Verified restored data and configuration integrity
 
 ## Recovery Metrics
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/01a498e806aaf7994ebc5b4738796de4b047b4c6/Week%205%20%E2%80%93%20Backup%20%26%20Restore/Screenshots/3.png)
 
 ### Amazon RDS
 

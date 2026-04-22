@@ -19,7 +19,13 @@ Configured observability controls for EC2 instances running in the production en
 
 ### CloudWatch Alarm Configuration
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/c0fade25f2669d2b6fa56f21996e616b99a81cbd/Week%204%20%E2%80%93%20Monitoring%20%26%20Alerting/Screenshots/1.png)
+
 Created an alarm that monitored EC2 CPU utilization and triggered when usage exceeded defined thresholds.
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/c0fade25f2669d2b6fa56f21996e616b99a81cbd/Week%204%20%E2%80%93%20Monitoring%20%26%20Alerting/Screenshots/1-1fixed.png)
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/c0fade25f2669d2b6fa56f21996e616b99a81cbd/Week%204%20%E2%80%93%20Monitoring%20%26%20Alerting/Screenshots/3-1.png)
 
 ### Automated Response Actions
 
@@ -29,9 +35,13 @@ When alarm conditions were met:
 * Automatically stopped the affected EC2 instance to prevent runaway cost or further degradation
 * Enabled investigation of the impacted workload
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/c0fade25f2669d2b6fa56f21996e616b99a81cbd/Week%204%20%E2%80%93%20Monitoring%20%26%20Alerting/Screenshots/1-2fixed.png)
+
 ## Monitoring Dashboard
 
 Built a CloudWatch dashboard to centralize operational visibility.
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/c0fade25f2669d2b6fa56f21996e616b99a81cbd/Week%204%20%E2%80%93%20Monitoring%20%26%20Alerting/Screenshots/2-1fixed.png)
 
 ### Dashboard Included
 

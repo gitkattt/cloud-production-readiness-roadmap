@@ -4,6 +4,8 @@
 
 Implemented organization-wide auditing and compliance controls by enabling AWS CloudTrail across all accounts, creating a centralized logging account, and using AWS Config to detect and remediate misconfigurations.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/45ecdce2825317e27efa8ad6873ac474ec60f68b/Week%202%20%E2%80%93%20Centralized%20Logging%20%26%20Config/Screenshots/Week%202%20SS.png)
+
 ## Services Used
 
 * AWS Organizations
@@ -14,6 +16,8 @@ Implemented organization-wide auditing and compliance controls by enabling AWS C
 * IAM Policies
 
 ## Environment Setup
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/45ecdce2825317e27efa8ad6873ac474ec60f68b/Week%202%20%E2%80%93%20Centralized%20Logging%20%26%20Config/Screenshots/Week%202%20SS2.png)
 
 ### Organization-Level CloudTrail
 

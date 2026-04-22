@@ -3,6 +3,8 @@
 
 ## Overview
 
+Hi my name is Jonathan Davis, My goal is to become a AWS Cloud Systems Administrator.
+
 This repository documents a structured 6-month hands-on learning journey focused on building real-world AWS cloud engineering and production infrastructure skills. The goal of this roadmap is to move beyond theory and develop practical experience designing, deploying, and operating scalable, secure, and highly available cloud systems.
 
 Throughout the program, each week introduces production-style scenarios covering core AWS domains such as networking, security, compute, storage, monitoring, automation, and disaster recovery.

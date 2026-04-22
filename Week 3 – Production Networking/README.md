@@ -38,7 +38,7 @@ Created a full VPC environment containing:
 
 Provisioned the environment using AWS CloudFormation templates.
 
-[image goes here]
+![image alt](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/b45f85fadd384e9a38037f69ef88037f07d31f4f/Week%203%20%E2%80%93%20Production%20Networking/Screenshots/2.png)
 
 ### Benefits of CloudFormation
 
@@ -50,6 +50,8 @@ Provisioned the environment using AWS CloudFormation templates.
 Verified successful stack creation after deployment.
 
 ## Bastion Host Deployment
+
+![image alt](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/b45f85fadd384e9a38037f69ef88037f07d31f4f/Week%203%20%E2%80%93%20Production%20Networking/Screenshots/1.png)
 
 Launched two EC2 instances:
 

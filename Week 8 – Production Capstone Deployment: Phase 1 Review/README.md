@@ -5,6 +5,8 @@
 
 Designed and deployed a production-style AWS application environment that combined concepts from previous weeks into a single end-to-end architecture. The solution focused on scalability, high availability, monitoring, backups, and disaster recovery.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f466ad3151c36e32f8776749fd7d5070886373d0/Week%208%20%E2%80%93%20Production%20Capstone%20Deployment%3A%20Phase%201%20Review/Screenshots/Pasted%20image%2020260420111553.png)
+
 ## Services Used
 
 * Amazon VPC
@@ -39,6 +41,8 @@ Built a production-ready web application environment consisting of:
 
 ## Network Architecture
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f466ad3151c36e32f8776749fd7d5070886373d0/Week%208%20%E2%80%93%20Production%20Capstone%20Deployment%3A%20Phase%201%20Review/Screenshots/Pasted%20image%2020260420111600.png)
+
 Used AWS CloudFormation to deploy a custom VPC with:
 
 * 2 Public Subnets
@@ -64,6 +68,8 @@ Used AWS CloudFormation to deploy a custom VPC with:
 
 ## Database Layer
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f466ad3151c36e32f8776749fd7d5070886373d0/Week%208%20%E2%80%93%20Production%20Capstone%20Deployment%3A%20Phase%201%20Review/Screenshots/db.webp)
+
 Deployed Amazon RDS MySQL in a Multi-AZ configuration across separate Availability Zones.
 
 ### Validation
@@ -85,6 +91,10 @@ Developed a Flask application that allowed users to:
 
 * View usernames stored in the database
 * Add new usernames through the web interface
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f466ad3151c36e32f8776749fd7d5070886373d0/Week%208%20%E2%80%93%20Production%20Capstone%20Deployment%3A%20Phase%201%20Review/Screenshots/final.webp)
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f466ad3151c36e32f8776749fd7d5070886373d0/Week%208%20%E2%80%93%20Production%20Capstone%20Deployment%3A%20Phase%201%20Review/Screenshots/flask%20code.png)
 
 Validated functionality locally and through public HTTP access.
 

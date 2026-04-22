@@ -17,7 +17,7 @@ Designed and deployed a highly available web application architecture using an A
 
 ## Deployment Approach
 
-This week’s environment was built manually through the AWS Console rather than CloudFormation to strengthen hands-on operational knowledge of service configuration and dependencies.
+This week’s environment was built manually through the AWS Console rather than CloudFormation to strengthen hands-on operational knowledge of service configuration and dependencies. (4/22/26 EDIT: I re-did this lab to gather screenshots, this time I through CloudFromation to save time)
 
 ## Auto Scaling Group and Load Balancer Deployment
 

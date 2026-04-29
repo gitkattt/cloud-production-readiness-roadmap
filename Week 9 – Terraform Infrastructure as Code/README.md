@@ -35,6 +35,8 @@ Infrastructure was deployed, destroyed, and redeployed multiple times to validat
 
 ## Terraform Workflow
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/64358fe92263bbb204a57060284b9dccf8581073/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/Terraform%20code.png)
+
 Used standard Terraform workflow to manage infrastructure:
 
 ### Initialization

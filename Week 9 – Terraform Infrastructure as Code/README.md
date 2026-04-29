@@ -84,48 +84,52 @@ Designed a basic VPC architecture with:
 
 ## Database Layer
 
-Deployed an Amazon RDS instance in a private subnet to ensure isolation from public access.
+* Deployed an Amazon RDS instance in a private subnet to ensure isolation from public access.
 
 ## Validation
-Confirmed RDS deployment
-Verified security group restrictions allowed access only from EC2
-Ensured database was not publicly accessible
-Iteration & Optimization
+* Confirmed RDS deployment
+* Verified security group restrictions allowed access only from EC2
+* Ensured database was not publicly accessible
+* Iteration & Optimization
 
-To improve deployment speed during testing:
+## To improve deployment speed during testing:
 
-Removed RDS from later iterations
-Focused on faster EC2 + networking deployments
-Re-ran Terraform workflows multiple times for consistency
-Incidents
-Terraform Deployment Failures
-Encountered multiple syntax and configuration errors during terraform apply
+* Removed RDS from later iterations
+* Focused on faster EC2 + networking deployments
+* Re-ran Terraform workflows multiple times for consistency
 
-Root Cause
+## Incidents
+* Terraform Deployment Failures
+* Encountered multiple syntax and configuration errors during terraform apply
 
-Incorrect syntax and misconfigured resource blocks in Terraform files
+## Root Cause
 
-Resolution
+* Incorrect syntax and misconfigured resource blocks in Terraform files
 
-Used terraform validate and terraform plan for debugging
-Referenced official Terraform documentation
-Iteratively corrected configuration issues
-Key Takeaways
-Infrastructure can be defined and deployed entirely through code
-Terraform enables consistent and repeatable cloud environments
-Iterative deployment improves understanding of resource dependencies
-Debugging configuration errors is a critical IaC skill
-Automation significantly reduces manual provisioning time
-Future Improvements
-Refactor configuration into:
-main.tf
-variables.tf
-outputs.tf
-Introduce reusable Terraform modules
-Implement remote state using S3 and DynamoDB
-Restrict SSH access to specific IP ranges or replace with SSM Session Manager
-Expand architecture with load balancing and autoscaling
-Resume Bullet
+## Resolution
+
+* Used terraform validate and terraform plan for debugging
+* Referenced official Terraform documentation
+* Iteratively corrected configuration issues
+
+## Key Takeaways
+* Infrastructure can be defined and deployed entirely through code
+* Terraform enables consistent and repeatable cloud environments
+* Iterative deployment improves understanding of resource dependencies
+* Debugging configuration errors is a critical IaC skill
+* Automation significantly reduces manual provisioning time
+
+## Future Improvements
+* Refactor configuration into:
+* main.tf
+* variables.tf
+* outputs.tf
+* Introduce reusable Terraform modules
+* Implement remote state using S3 and DynamoDB
+* Restrict SSH access to specific IP ranges or replace with SSM Session Manager
+* Expand architecture with load balancing and autoscaling
+
+## Resume Bullet
 
 Provisioned AWS infrastructure using Terraform, including a custom VPC, public and private subnets, EC2, and RDS, enabling repeatable and automated deployments while improving infrastructure consistency and provisioning efficiency.
 

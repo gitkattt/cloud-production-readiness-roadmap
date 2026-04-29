@@ -57,6 +57,8 @@ Repeated apply/destroy cycles to validate idempotency and ensure reliable provis
 
 ## Network Architecture
 
+![alt image](ADD_YOUR_SCREENSHOT_HERE)
+
 Designed a basic VPC architecture with:
 
 * 1 Public Subnet (EC2)
@@ -67,13 +69,19 @@ Designed a basic VPC architecture with:
 
 ## EC2 Security Group
 
+![alt image](ADD_YOUR_SCREENSHOT_HERE)
+
 * Allow SSH (port 22) for remote access
 
 ## RDS Security Group
 
+![alt image](ADD_YOUR_SCREENSHOT_HERE)
+
 * Allow database traffic only from EC2 Security Group
 
 ## Compute Layer
+
+![alt image](ADD_YOUR_SCREENSHOT_HERE)
 
 * Deployed an EC2 instance in the public subnet to act as the application entry point.
 
@@ -83,6 +91,8 @@ Designed a basic VPC architecture with:
 * Ensured proper network routing through Internet Gateway
 
 ## Database Layer
+
+![alt image](ADD_YOUR_SCREENSHOT_HERE)
 
 * Deployed an Amazon RDS instance in a private subnet to ensure isolation from public access.
 

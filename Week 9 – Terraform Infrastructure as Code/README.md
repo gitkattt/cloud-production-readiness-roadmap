@@ -5,7 +5,7 @@
 
 Implemented Infrastructure as Code (IaC) using Terraform to design, deploy, and manage AWS resources. Focused on repeatable deployments, environment consistency, and improving provisioning speed through automation.
 
-![alt image](ADD_YOUR_SCREENSHOT_HERE)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/Pasted%20image%2020260429120720.png)
 
 ## Services Used
 
@@ -55,9 +55,13 @@ terraform destroy
 
 Repeated apply/destroy cycles to validate idempotency and ensure reliable provisioning.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/apply.png)
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/destroy.png)
+
 ## Network Architecture
 
-![alt image](ADD_YOUR_SCREENSHOT_HERE)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/vpc.png)
 
 Designed a basic VPC architecture with:
 
@@ -69,19 +73,19 @@ Designed a basic VPC architecture with:
 
 ## EC2 Security Group
 
-![alt image](ADD_YOUR_SCREENSHOT_HERE)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/ec2%20sg.png)
 
 * Allow SSH (port 22) for remote access
 
 ## RDS Security Group
 
-![alt image](ADD_YOUR_SCREENSHOT_HERE)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/rds%20sg.png)
 
 * Allow database traffic only from EC2 Security Group
 
 ## Compute Layer
 
-![alt image](ADD_YOUR_SCREENSHOT_HERE)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/instance.png)
 
 * Deployed an EC2 instance in the public subnet to act as the application entry point.
 
@@ -92,7 +96,7 @@ Designed a basic VPC architecture with:
 
 ## Database Layer
 
-![alt image](ADD_YOUR_SCREENSHOT_HERE)
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/d0d2262f5e7274e02ed54a76d8b436222900588d/Week%209%20%E2%80%93%20Terraform%20Infrastructure%20as%20Code/Screenshots/db.png)
 
 * Deployed an Amazon RDS instance in a private subnet to ensure isolation from public access.
 

@@ -5,7 +5,9 @@
 
 Implemented a remote Terraform state backend using AWS S3 and DynamoDB to follow production best practices for infrastructure management, focusing on consistency, reliability, and team collaboration.
 
-Architecture Overview
+![alt image](
+
+## Architecture Overview
 
 Designed and deployed a multi-AZ AWS environment using Terraform:
 

@@ -1,7 +1,7 @@
 
-## Week 10 – Terraform Remote State Backend
+# Week 10 – Terraform Remote State Backend
 
-# Objective
+## Objective
 
 Implemented a remote Terraform state backend using AWS S3 and DynamoDB to follow production best practices for infrastructure management, focusing on consistency, reliability, and team collaboration.
 

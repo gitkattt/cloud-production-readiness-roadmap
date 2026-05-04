@@ -5,7 +5,7 @@
 
 Implemented a remote Terraform state backend using AWS S3 and DynamoDB to follow production best practices for infrastructure management, focusing on consistency, reliability, and team collaboration.
 
-![alt image]()
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2075dcf186dfcc6a6680d126b301a52e1419e288/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/Pasted%20image%2020260504135909.png)
 
 ## Architecture Overview
 
@@ -19,7 +19,7 @@ main.tf
 
 ## Infrastructure Provisioned
 
-![alt image]()
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2075dcf186dfcc6a6680d126b301a52e1419e288/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/Pasted%20image%2020260504135031.png)
 
 * VPC (main)
 * 2 Public Subnets (across multiple Availability Zones)
@@ -38,21 +38,22 @@ main.tf
 
 Configured a remote backend to replace local Terraform state.
 
-![alt image]()
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2075dcf186dfcc6a6680d126b301a52e1419e288/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/statefile%20location%20in%20terraform.png)
 
 * S3 Bucket
 * Enabled versioning for state recovery
 * Enabled encryption for security
 * Stores the terraform.tfstate file
+* ![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2075dcf186dfcc6a6680d126b301a52e1419e288/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/bucket%20versioning%20enabled.png)
 
 ## DynamoDB Table
 * Used for state locking
 * Prevents concurrent Terraform operations
 * Configuration Files
 * backend.tf – defines remote backend
-* ![alt image]()
+* ![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/baa9806914bbcfc938aec2a5edbad7180a58229f/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/backend.PNG)
 * provider.tf – defines AWS provider configuration
-* ![alt image]()
+* ![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/baa9806914bbcfc938aec2a5edbad7180a58229f/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/provider.PNG)
 
 ## State Migration
 
@@ -75,6 +76,7 @@ This setup reflects real-world production Terraform workflows.
 
 ## Issue
 * Repeated errors during Terraform operations:
+* ![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/baa9806914bbcfc938aec2a5edbad7180a58229f/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/backend%20error%201.png)
 ```
 Error acquiring state lock
 ```
@@ -89,6 +91,7 @@ Error acquiring state lock
 ```
 terraform force-unlock
 ```
+* ![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/baa9806914bbcfc938aec2a5edbad7180a58229f/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/Fixed%20backend%20error.png)
 ## Key Takeaways
 * Gained hands-on experience with Terraform state recovery
 * Learned how state locking behaves in failure scenarios

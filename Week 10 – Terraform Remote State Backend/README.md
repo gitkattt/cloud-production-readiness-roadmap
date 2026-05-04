@@ -80,7 +80,7 @@ Error acquiring state lock
 ```
 ## Root Cause
 * Accidental deletion of the S3 bucket containing the Terraform state file
-##Impact
+## Impact
 * Terraform unable to acquire lock
 * Infrastructure operations blocked
 ##Resolution
@@ -89,7 +89,7 @@ Error acquiring state lock
 ```
 terraform force-unlock
 ```
-##Key Takeaways
+## Key Takeaways
 * Gained hands-on experience with Terraform state recovery
 * Learned how state locking behaves in failure scenarios
 * Reinforced the importance of protecting remote state infrastructure

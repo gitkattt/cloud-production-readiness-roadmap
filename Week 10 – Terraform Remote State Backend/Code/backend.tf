@@ -1,6 +1,6 @@
 # Create S3 Bucket
 resource "aws_s3_bucket" "mybucket"{
-    bucket = "s3-state-back-end-667"
+    bucket = "bucket-name-here"
     versioning {
         enabled = true
     }

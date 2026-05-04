@@ -38,8 +38,6 @@ main.tf
 
 Configured a remote backend to replace local Terraform state.
 
-![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2075dcf186dfcc6a6680d126b301a52e1419e288/Week%2010%20%E2%80%93%20Terraform%20Remote%20State%20Backend/Screenshots/statefile%20location%20in%20terraform.png)
-
 * S3 Bucket
 * Enabled versioning for state recovery
 * Enabled encryption for security

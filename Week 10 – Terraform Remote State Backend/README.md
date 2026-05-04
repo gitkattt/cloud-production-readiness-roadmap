@@ -5,23 +5,31 @@
 
 Implemented a remote Terraform state backend using AWS S3 and DynamoDB to follow production best practices for infrastructure management, focusing on consistency, reliability, and team collaboration.
 
-![alt image](
+![alt image]()
 
 ## Architecture Overview
 
 Designed and deployed a multi-AZ AWS environment using Terraform:
 
+```
 main.tf
 ├── variables.tf
 └── outputs.tf
-Infrastructure Provisioned
-VPC (main)
-2 Public Subnets (across multiple Availability Zones)
-2 Private Subnets (across multiple Availability Zones)
-Internet Gateway with routing for public subnets
-Security Group allowing SSH access (port 22)
-EC2 instances hosting web servers in each public subnet
-Key Improvements
+```
+
+## Infrastructure Provisioned
+
+![alt image]()
+
+* VPC (main)
+* 2 Public Subnets (across multiple Availability Zones)
+* 2 Private Subnets (across multiple Availability Zones)
+* Internet Gateway with routing for public subnets
+* Security Group allowing SSH access (port 22)
+* EC2 instances hosting web servers in each public subnet
+
+## Key Improvements
+
 Used Terraform variables to improve code reusability
 Structured configuration files for maintainability and scalability
 Followed infrastructure-as-code best practices for cleaner deployments

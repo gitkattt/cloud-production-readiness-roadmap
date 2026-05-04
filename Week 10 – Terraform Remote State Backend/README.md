@@ -71,9 +71,9 @@ Implementing remote state provides:
 
 This setup reflects real-world production Terraform workflows.
 
-## Incident & Troubleshooting
+# Incident & Troubleshooting
 
-Issue
+##Issue
 * Repeated errors during Terraform operations:
 ```
 Error acquiring state lock

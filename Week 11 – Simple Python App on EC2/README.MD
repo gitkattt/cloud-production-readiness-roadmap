@@ -56,10 +56,11 @@ HTTP (Port 80)
 ```
 
 Installed required dependencies:
-
+```
 sudo apt install python3-pip nginx
+```
 
-Installed FastAPI and Uvicorn from requirements.txt and configured the application to run as a service using systemd.
+Installed FastAPI and Uvicorn from `requirements.txt` and configured the application to run as a service using `systemd`.
 
 NGINX Reverse Proxy
 

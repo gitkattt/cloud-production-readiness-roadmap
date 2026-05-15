@@ -1,27 +1,30 @@
-## Week 11 - Simple Python App on EC2/ECS
+# Week 11 - Simple Python App on EC2/ECS
 
-# Objective
+## Objective
 
 Deployed simple web applications to both Amazon EC2 and Amazon ECS using two different deployment approaches:
 
-Traditional EC2-based application hosting
-Containerized deployment using ECS Fargate and Docker
+## Traditional EC2-based application hosting
+
+## Containerized deployment using ECS Fargate and Docker
 
 Focused on application deployment workflows, containerization, reverse proxy configuration, and exposing applications securely to the public internet.
 
-Services Used
-Amazon EC2
-Amazon ECS
-AWS Fargate
-Amazon ECR
-Security Groups
-Docker
-Python FastAPI
-Node.js Express
-NGINX
-Linux
-Uvicorn
-Solution Overview
+## Tools/Services Used
+
+* Amazon EC2
+* Amazon ECS
+* AWS Fargate
+* Amazon ECR
+* Security Groups
+* Docker
+* Python FastAPI
+* Node.js Express
+* NGINX
+* Linux
+* Uvicorn
+
+## Solution Overview
 
 Implemented two separate application deployment solutions:
 

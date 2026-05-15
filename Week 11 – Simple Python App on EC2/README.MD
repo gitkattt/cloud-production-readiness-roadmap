@@ -67,17 +67,20 @@ NGINX Reverse Proxy
 Configured NGINX to forward incoming HTTP traffic to the FastAPI application running with Uvicorn.
 
 Traffic Flow
+```
 Internet → NGINX → FastAPI (Uvicorn)
-
+```
 This allowed the FastAPI application to be accessible through standard HTTP port 80.
 
-Validation
+## Validation
 Verified EC2 instance accessibility via SSH
 Confirmed NGINX was running correctly
 Verified FastAPI application was accessible from the public internet
 Confirmed HTTP requests were successfully routed through NGINX
-Section 2 - ECS Fargate Deployment
+
+## Section 2 - ECS Fargate Deployment
 Express API Development
+![alt image]()
 
 Created a simple Node.js Express API inside index.js that returned a welcome message when accessed.
 
@@ -86,17 +89,17 @@ Created a package.json file containing all required dependencies for the applica
 Containerization
 
 Built and tested the Docker container locally before deployment.
-
+```
 Docker Build
 docker build -t express-api .
 Local Testing
 docker run -p 5000:5000 express-api
-
+```
 Verified the application was accessible locally on:
-
+```
 localhost:5000
-
-Amazon ECR Deployment
+```
+## Amazon ECR Deployment
 
 Pushed the Docker container image to Amazon ECR after authenticating Docker with AWS.
 
@@ -104,15 +107,15 @@ ECS Fargate Deployment
 
 Created:
 
-ECS Cluster
-Task Definition
-ECS Service
+* ECS Cluster
+* Task Definition
+* ECS Service
 
 Configured the service to run on AWS Fargate without managing EC2 instances directly.
 
-Security groups were configured to allow inbound traffic on port 5000.
+Security groups were configured to allow inbound traffic on `port 5000`.
 
-Validation
+## Validation
 Verified ECS tasks were running successfully
 Confirmed container deployment through ECS Service
 Validated public access to the application

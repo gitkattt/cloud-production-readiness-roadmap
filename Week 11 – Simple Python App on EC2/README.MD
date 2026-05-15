@@ -4,9 +4,9 @@
 
 Deployed simple web applications to both Amazon EC2 and Amazon ECS using two different deployment approaches:
 
-## Traditional EC2-based application hosting
+* Traditional EC2-based application hosting
 
-## Containerized deployment using ECS Fargate and Docker
+* Containerized deployment using ECS Fargate and Docker
 
 Focused on application deployment workflows, containerization, reverse proxy configuration, and exposing applications securely to the public internet.
 

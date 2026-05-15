@@ -46,7 +46,7 @@ Both deployments were validated successfully before infrastructure teardown.
 
 ## Section 1 - EC2 FastAPI Deployment
 EC2 Infrastructure
-![alt image]()
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/6bbeb976584a8fe567f3a287d902e4f538648faa/Week%2011%20%E2%80%93%20Simple%20Python%20App%20on%20EC2/Screenshots/EC2/Pasted%20image%2020260514145800.png)
 
 Created an EC2 instance with a security group configured to allow:
 
@@ -80,7 +80,7 @@ Confirmed HTTP requests were successfully routed through NGINX
 
 ## Section 2 - ECS Fargate Deployment
 Express API Development
-![alt image]()
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/6bbeb976584a8fe567f3a287d902e4f538648faa/Week%2011%20%E2%80%93%20Simple%20Python%20App%20on%20EC2/Screenshots/ECS/Pasted%20image%2020260514145720.png)
 
 Created a simple Node.js Express API inside index.js that returned a welcome message when accessed.
 

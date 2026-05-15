@@ -28,12 +28,15 @@ Focused on application deployment workflows, containerization, reverse proxy con
 
 Implemented two separate application deployment solutions:
 
-EC2 Deployment
+## EC2 Deployment
+
 Deployed a FastAPI application directly on an EC2 instance
 Configured NGINX as a reverse proxy
 Used systemd to manage the FastAPI service
 Exposed the application publicly over HTTP
-ECS Deployment
+
+## ECS Deployment
+
 Built and containerized a Node.js Express API using Docker
 Uploaded the container image to Amazon ECR
 Deployed the containerized application to ECS using AWS Fargate
@@ -41,13 +44,16 @@ Configured networking and security groups for external access
 
 Both deployments were validated successfully before infrastructure teardown.
 
-Section 1 - EC2 FastAPI Deployment
+## Section 1 - EC2 FastAPI Deployment
 EC2 Infrastructure
+![alt image]()
 
 Created an EC2 instance with a security group configured to allow:
 
+```
 SSH (Port 22)
 HTTP (Port 80)
+```
 
 Installed required dependencies:
 

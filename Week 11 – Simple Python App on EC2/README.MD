@@ -45,7 +45,9 @@ Configured networking and security groups for external access
 Both deployments were validated successfully before infrastructure teardown.
 
 ## Section 1 - EC2 FastAPI Deployment
+
 EC2 Infrastructure
+
 ![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/6bbeb976584a8fe567f3a287d902e4f538648faa/Week%2011%20%E2%80%93%20Simple%20Python%20App%20on%20EC2/Screenshots/EC2/Pasted%20image%2020260514145800.png)
 
 Created an EC2 instance with a security group configured to allow:

@@ -7,6 +7,8 @@ Implemented a full CI/CD pipeline using:
 * Docker
 * AWS EC2
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/48bb02d038311a3f4e29be7d7f1f92dafbd4d0be/Week%2012%20%E2%80%93%20GitHub%20Actions%20pipeline/Sreenshots/Pasted%20image%2020260520123132.png)
+
 to automate application deployment workflows. The project focused on containerized deployments, self-hosted runners, reverse proxy configuration, and troubleshooting pipeline failures.
 
 ## Technologies Used
@@ -33,6 +35,12 @@ Created a sample containerized application in VS Code.
 Configured the application to run on port `8080.`
 Built Docker images for the application.
 
+## CI Pipeline Actions
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/48bb02d038311a3f4e29be7d7f1f92dafbd4d0be/Week%2012%20%E2%80%93%20GitHub%20Actions%20pipeline/Sreenshots/CI%20pipeline.png)
+
+## CD Pipeline Actions
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/48bb02d038311a3f4e29be7d7f1f92dafbd4d0be/Week%2012%20%E2%80%93%20GitHub%20Actions%20pipeline/Sreenshots/CD%20pipeline.png)
+
 ## Configured GitHub Actions workflow files:
 ```
 ci.yml
@@ -53,6 +61,8 @@ cd.yml
 * Automated deployment updates on the EC2 instance.
 * Confirmed updated containers were automatically deployed after new commits.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/48bb02d038311a3f4e29be7d7f1f92dafbd4d0be/Week%2012%20%E2%80%93%20GitHub%20Actions%20pipeline/Sreenshots/before%20deployment.png)
+
 ## Reverse Proxy Configuration
  * Installed and configured NGINX as a reverse proxy.
  * Forwarded traffic from the EC2 public IP to the containerized application running on port 8080.
@@ -62,6 +72,8 @@ cd.yml
 * Modified the application and rebuilt the Docker image.
 * Confirmed the CI/CD pipeline automatically deployed updated application versions.
 * Verified the updated application was accessible from the browser.
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/48bb02d038311a3f4e29be7d7f1f92dafbd4d0be/Week%2012%20%E2%80%93%20GitHub%20Actions%20pipeline/Sreenshots/after%20deployment.png)
 
 # Troubleshooting and Debugging
 

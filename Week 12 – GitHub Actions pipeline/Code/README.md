@@ -1,5 +1,5 @@
 
-##PLEASE READ
+## PLEASE READ
 
 I have created a seperate github repository where you can find the code for this lab
 

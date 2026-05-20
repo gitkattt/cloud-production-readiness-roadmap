@@ -55,6 +55,8 @@ cd.yml
 * Configured a self-hosted GitHub Actions runner on the server.
 * Verified that GitHub Actions jobs executed successfully on the runner.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/dd8749a79ef84632fb18732ec50f8acdf2de5644/Week%2012%20%E2%80%93%20GitHub%20Actions%20pipeline/Sreenshots/runner.png)
+
 ## Automated Deployment
 * Confirmed successful CI pipeline execution.
 * Verified Docker images were correctly pushed to the repository.

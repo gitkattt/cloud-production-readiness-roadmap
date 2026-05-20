@@ -108,4 +108,5 @@ This resulted in multiple workflow failures and deployment issues, requiring deb
 * YAML workflow debugging
 * Cloud deployment workflows
 
-
+## Resume Bullet:
+Built and deployed a full CI/CD pipeline using GitHub Actions, Docker, NGINX, and Amazon Web Services EC2 with a self-hosted runner to automate containerized application deployments, image updates, reverse proxy configuration, and deployment troubleshooting in a Linux environment.

@@ -13,6 +13,8 @@ Focused on AWS cost optimization techniques by implementing AWS Budgets, Cost An
 
 For the first section of this lab, I created an AWS Budget to help prevent accidental overspending during future labs and projects.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/482d31c71770203a05e1b3964d2ebd4b20142de8/Week%2013%20-%20AWS%20Cost%20Optimization/Screenshots/1.png)
+
 Initially, I misconfigured the budget and did not receive alerts when I exceeded my spending threshold. During my Week 8 Capstone Deployment, I unintentionally exceeded the budget and reached a total of approximately `$6.07 USD`.
 
 To correct this issue, I recreated the budget with proper email notifications enabled. The updated budget was configured with a `$2 USD` threshold to notify me immediately if costs started increasing unexpectedly.
@@ -23,9 +25,13 @@ I also implemented **AWS Budget Actions** to automate cost control.
 
 The budget action was configured to automatically stop EC2 and RDS instances once the configured spending threshold was reached. This demonstrated how AWS Budgets can be integrated with automated remediation workflows to reduce unnecessary cloud spending.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/482d31c71770203a05e1b3964d2ebd4b20142de8/Week%2013%20-%20AWS%20Cost%20Optimization/Screenshots/3.png)
+
 ---
 
 ## AWS Cost Anomaly Detection
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/482d31c71770203a05e1b3964d2ebd4b20142de8/Week%2013%20-%20AWS%20Cost%20Optimization/Screenshots/Pasted%20image%2020260529133549.png)
 
 I configured **AWS Cost Anomaly Detection** to automatically detect unusual spending patterns and provide root cause analysis.
 
@@ -51,6 +57,8 @@ I created a test S3 bucket containing sample data and configured lifecycle rules
 
 ## Lifecycle Configuration
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/482d31c71770203a05e1b3964d2ebd4b20142de8/Week%2013%20-%20AWS%20Cost%20Optimization/Screenshots/Pasted%20image%2020260529133607.png)
+
 The following lifecycle action was enabled:
 
 * Transition current versions of objects between storage classes
@@ -59,6 +67,8 @@ The following lifecycle action was enabled:
 
 * Transition objects to **S3 Standard-IA** after `30 days`
 * Transition objects to **S3 Glacier Deep Archive** after `365 days`
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/482d31c71770203a05e1b3964d2ebd4b20142de8/Week%2013%20-%20AWS%20Cost%20Optimization/Screenshots/5.png)
 
 This demonstrated how organizations can automate long-term archival storage while minimizing manual intervention and storage costs.
 
@@ -75,6 +85,8 @@ The EC2 instance was running a simple web server on a `t3.medium` instance type,
 1. Stopped the EC2 instance
 2. Changed the instance type
 3. Restarted the instance
+
+![alt image]()
 
 ### Instance Migration
 

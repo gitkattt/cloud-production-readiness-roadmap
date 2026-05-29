@@ -86,7 +86,7 @@ The EC2 instance was running a simple web server on a `t3.medium` instance type,
 2. Changed the instance type
 3. Restarted the instance
 
-![alt image]()
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/7bb7ce1d432b48e5d4bced5c1c5c631b91f86c40/Week%2013%20-%20AWS%20Cost%20Optimization/Screenshots/6.png)
 
 ### Instance Migration
 

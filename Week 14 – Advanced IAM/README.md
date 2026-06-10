@@ -17,6 +17,8 @@ The goal was to better understand how organizations enforce least-privilege acce
 
 # Lab 1: IAM Permission Boundaries
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/76040aa78a50c04168779e396de4f9f1a4ff24b9/Week%2014%20%E2%80%93%20Advanced%20IAM/Screenshots/Pasted%20image%2020260610130116.png)
+
 ## Objective
 
 Implement an IAM Permission Boundary to prevent users from escalating privileges while still allowing them to perform administrative IAM tasks within defined limits.
@@ -52,6 +54,8 @@ The policy allowed IAM actions while enforcing several security controls through
 Ronnie
 ```
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/76040aa78a50c04168779e396de4f9f1a4ff24b9/Week%2014%20%E2%80%93%20Advanced%20IAM/Screenshots/2.png)
+
 The user was granted broad IAM permissions and assigned the Permission Boundary.
 
 I then attempted to create a new IAM user with elevated permissions using the AdministratorAccess policy.
@@ -73,6 +77,8 @@ Without the boundary, a user with sufficient IAM permissions could potentially c
 ---
 
 # Lab 2: Cross-Account S3 Access
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/76040aa78a50c04168779e396de4f9f1a4ff24b9/Week%2014%20%E2%80%93%20Advanced%20IAM/Screenshots/Pasted%20image%2020260610113506.png)
 
 ## Objective
 
@@ -212,11 +218,13 @@ After reverting the policy, privilege escalation attempts were once again blocke
 
 ---
 
-# IAM Troubleshooting Example
+# IAM Troubleshooting Testing
 
 ## Issue
 
 While attempting to assume a cross-account role, AWS returned an authorization error indicating that the user was not permitted to assume the role.
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/76040aa78a50c04168779e396de4f9f1a4ff24b9/Week%2014%20%E2%80%93%20Advanced%20IAM/Screenshots/fixed.png)
 
 ### Root Cause
 

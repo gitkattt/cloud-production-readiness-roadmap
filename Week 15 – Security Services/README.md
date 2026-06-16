@@ -18,6 +18,8 @@ This week focused on implementing AWS security monitoring, compliance, and gover
 
 # Lab 1 - AWS GuardDuty
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/391afa0d6e0695e334c1b7a41f00d4906322da9c/Week%2015%20%E2%80%93%20Security%20Services/Screenshots/Pasted%20image%2020260616114236.png)
+
 ## What is AWS GuardDuty?
 
 AWS GuardDuty is a threat detection service that continuously monitors AWS accounts and workloads for malicious activity and unauthorized behavior.
@@ -45,6 +47,8 @@ For this lab, I enabled AWS GuardDuty within my AWS account.
 
 Because my AWS account was relatively new and had no active threats, I generated sample findings using GuardDuty's built-in sample findings feature. This allowed me to simulate common security incidents and practice investigating findings.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/391afa0d6e0695e334c1b7a41f00d4906322da9c/Week%2015%20%E2%80%93%20Security%20Services/Screenshots/more%20samples.png)
+
 I explored:
 
 * Finding severity levels
@@ -68,6 +72,8 @@ Successfully:
 ---
 
 # Lab 2 - AWS Security Hub
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/391afa0d6e0695e334c1b7a41f00d4906322da9c/Week%2015%20%E2%80%93%20Security%20Services/Screenshots/Pasted%20image%2020260616114301.png)
 
 ## What is AWS Security Hub?
 
@@ -106,6 +112,8 @@ To begin this lab, I enabled AWS Security Hub.
 
 After enabling Security Hub, I observed that previously generated GuardDuty sample findings were automatically imported and displayed within the Security Hub console.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/391afa0d6e0695e334c1b7a41f00d4906322da9c/Week%2015%20%E2%80%93%20Security%20Services/Screenshots/sample%20finding%20more%20detailed.png)
+
 I explored:
 
 * Security Score
@@ -131,6 +139,8 @@ Successfully:
 ---
 
 # Lab 3 - AWS Config Rules
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/391afa0d6e0695e334c1b7a41f00d4906322da9c/Week%2015%20%E2%80%93%20Security%20Services/Screenshots/Pasted%20image%2020260616114340.png)
 
 ## What is AWS Config?
 

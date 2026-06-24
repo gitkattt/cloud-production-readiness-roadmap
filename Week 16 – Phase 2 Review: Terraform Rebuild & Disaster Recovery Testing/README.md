@@ -42,3 +42,20 @@ The deployed architecture included:
 - EC2 User Data configuration
 
 The final architecture:
+
+```
+             Users
+               |
+               |
+      Application Load Balancer
+               |
+    -------------------------
+    |                       |
+
+Availability Zone 1 Availability Zone 2
+| |
+EC2 Instance EC2 Instance
+\ /
+\ /
+Auto Scaling Group
+```

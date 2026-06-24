@@ -53,9 +53,30 @@ The final architecture:
     |                       |
 
 Availability Zone 1 Availability Zone 2
-| |
-EC2 Instance EC2 Instance
-\ /
-\ /
-Auto Scaling Group
+    |                       |
+EC2 Instance           EC2 Instance
+    \                       /
+      \                   /
+       Auto Scaling Group
 ```
+
+
+---
+
+# Terraform Deployment Process
+
+## Terraform Validation
+
+Before deploying the infrastructure, Terraform configuration was validated.
+
+Commands used:
+
+```
+terraform validate
+```
+
+The configuration was then reviewed using: `terraform plan`
+
+After confirming the planned resources were correct, the environment was deployed: `terraform apply`
+
+

@@ -185,25 +185,25 @@ Used for:
 
 ## Incident: Terraform Deployment Failure
 
-# Summary
+**Summary**
 
 During the Terraform rebuild process, infrastructure deployment was initially blocked due to a Terraform syntax error.
 
-## Impact
+**Impact**
 
 Terraform validation failed, preventing the infrastructure from being deployed.
 
-## Detection
+**Detection**
 
 The issue was detected during:
 
 `terraform validate`
 
-## Root Cause
+**Root Cause**
 
 Incorrect Terraform syntax within the EC2 configuration/user data section caused the Terraform configuration to become invalid.
 
-Resolution
+**Resolution**
 
 Steps taken:
 

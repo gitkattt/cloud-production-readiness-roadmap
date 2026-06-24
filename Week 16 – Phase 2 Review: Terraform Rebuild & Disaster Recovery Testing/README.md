@@ -4,6 +4,8 @@
 
 Week 16 focused on validating the ability to **rebuild a production-style AWS environment using Infrastructure as Code (Terraform)** and testing the resilience of the architecture through an intentional outage simulation.
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/abc8ffbc3e0c3d0df07b1838cdf76881de228546/Week%2016%20%E2%80%93%20Phase%202%20Review%3A%20Terraform%20Rebuild%20%26%20Disaster%20Recovery%20Testing/Screenshots/4.png)
+
 The goal of this lab was to recreate the AWS environment built throughout Weeks 8-15 and verify that:
 
 - Infrastructure could be recreated from Terraform configuration
@@ -88,6 +90,10 @@ After confirming the planned resources were correct, the environment was deploye
 * Target group health checks passed
 * Application was accessible through the ALB endpoint
 * Instances successfully displayed metadata information including Availability Zone details
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/abc8ffbc3e0c3d0df07b1838cdf76881de228546/Week%2016%20%E2%80%93%20Phase%202%20Review%3A%20Terraform%20Rebuild%20%26%20Disaster%20Recovery%20Testing/Screenshots/1.webp)
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/abc8ffbc3e0c3d0df07b1838cdf76881de228546/Week%2016%20%E2%80%93%20Phase%202%20Review%3A%20Terraform%20Rebuild%20%26%20Disaster%20Recovery%20Testing/Screenshots/2.webp)
 
 This confirmed that the Terraform rebuild successfully recreated the required production-style environment.
 

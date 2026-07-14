@@ -105,7 +105,7 @@ kubectl apply -f deployment.yaml
 The deployment was exposed externally using:
 
 ```bash
-kubectl expose deployment nginx-deployment \
+kubectl expose deployment 2048-deployment \
 --type=LoadBalancer \
 --name=my-service
 ```

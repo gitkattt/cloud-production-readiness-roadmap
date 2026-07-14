@@ -1,5 +1,7 @@
 # Amazon EKS Kubernetes Deployment Lab
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2df55214189571eb57fdfcdf4dd27ad1cdb2495a/Week%2017%E2%80%9318%20%E2%80%93%20Kubernetes%20(EKS)/screenshots/Pasted%20image%2020260708142646.png)
+
 ## Overview
 
 This project demonstrates deploying and managing a Kubernetes cluster using **Amazon Elastic Kubernetes Service (EKS)**. The lab focuses on provisioning an EKS cluster, deploying containerized applications, configuring automatic scaling, monitoring cluster health, and troubleshooting networking failures.
@@ -84,6 +86,8 @@ eksctl create cluster \
 --managed
 ```
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2df55214189571eb57fdfcdf4dd27ad1cdb2495a/Week%2017%E2%80%9318%20%E2%80%93%20Kubernetes%20(EKS)/screenshots/1.png)
+
 After deployment, the CloudFormation stack was verified to ensure all required AWS resources had been successfully provisioned.
 
 ---
@@ -95,6 +99,8 @@ To verify the cluster was functioning correctly, I first deployed a simple **NGI
 Once connectivity was confirmed, I deployed the Kubernetes sample application **2048**, demonstrating application deployment within the cluster.
 
 Deployment manifests were created using Kubernetes YAML configuration files.
+↓↓↓
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2df55214189571eb57fdfcdf4dd27ad1cdb2495a/Week%2017%E2%80%9318%20%E2%80%93%20Kubernetes%20(EKS)/screenshots/2048.PNG)
 
 Applications were deployed with:
 
@@ -124,11 +130,15 @@ An HPA configuration file was created:
 hpa.yaml
 ```
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/2df55214189571eb57fdfcdf4dd27ad1cdb2495a/Week%2017%E2%80%9318%20%E2%80%93%20Kubernetes%20(EKS)/screenshots/3.png)
+
 The configuration was applied using:
 
 ```bash
 kubectl apply -f hpa.yaml
 ```
+
+
 
 This enabled Kubernetes to automatically increase or decrease pod replicas depending on CPU usage.
 

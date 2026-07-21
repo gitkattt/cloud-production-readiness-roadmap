@@ -149,6 +149,8 @@ One of the most influential publications is **NIST SP 800-145**, which defines t
 
 # AWS Compliance Services
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/62de6401cee2f6b16dd92f166a725cc3d4b46a93/Week%2019%20%E2%80%93%20Compliance%20Awareness/screenshots/Pasted%20image%2020260718142822.png)
+
 AWS provides several services that help organizations monitor, assess, and demonstrate compliance with regulatory frameworks.
 
 ## AWS Audit Manager

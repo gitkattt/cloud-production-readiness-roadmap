@@ -2,6 +2,8 @@
 
 ## Overview
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f25ccee0e60fc0995df177a6a1098455a205be20/Week%2020%20%E2%80%93%20AWS%20Glue%20ETL%20%26%20AWS%20Athena/Screenshots/Pasted%20image%2020260902134439.png)
+
 This lab was created to gain hands-on experience with **AWS Glue**, focusing on the AWS Glue Data Catalog, Crawlers, Amazon Athena, and Glue ETL Jobs.
 
 The goal was to understand how AWS Glue can be used to discover, catalog, transform, and query data stored in Amazon S3.
@@ -130,6 +132,8 @@ The data was entirely fictional and created specifically for this lab.
 
 I created a database in the AWS Glue Data Catalog named:
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f25ccee0e60fc0995df177a6a1098455a205be20/Week%2020%20%E2%80%93%20AWS%20Glue%20ETL%20%26%20AWS%20Athena/Screenshots/dbf.png)
+
 ```text
 project_db
 ```
@@ -176,6 +180,8 @@ For this lab, the crawler was configured to scan the customer CSV data stored in
 
 ### Initial Crawler Failure
 
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f25ccee0e60fc0995df177a6a1098455a205be20/Week%2020%20%E2%80%93%20AWS%20Glue%20ETL%20%26%20AWS%20Athena/Screenshots/3.webp)
+
 The first crawler run failed because the IAM role did not have the appropriate permissions required by AWS Glue.
 
 Initially, I had focused on providing access to:
@@ -190,6 +196,8 @@ I then re-ran the crawler.
 ### Result
 
 The second crawler run completed successfully.
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f25ccee0e60fc0995df177a6a1098455a205be20/Week%2020%20%E2%80%93%20AWS%20Glue%20ETL%20%26%20AWS%20Athena/Screenshots/4.webp)
 
 I verified that:
 
@@ -217,6 +225,8 @@ LIMIT 10;
 ```
 
 This returned a preview of the customer data stored in Amazon S3.
+
+![alt image](https://github.com/gitkattt/cloud-production-readiness-roadmap/blob/f25ccee0e60fc0995df177a6a1098455a205be20/Week%2020%20%E2%80%93%20AWS%20Glue%20ETL%20%26%20AWS%20Athena/Screenshots/data.webp)
 
 ### Key Concept
 

@@ -1,4 +1,4 @@
-# AWS Glue ETL Hands-On Lab
+# Week 20 – AWS Glue ETL & AWS Athena
 
 ## Overview
 
